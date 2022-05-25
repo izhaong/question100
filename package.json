@@ -10,7 +10,7 @@
         "dev": "cross-env NODE_ENV=development webpack server --config webpack/webpack.dev.js",
         "test": "jest",
         "lint": "tslint -c tslint.json 'src/**/*.ts'",
-        "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
+        "lint:eslint": "eslint --cache --max-warnings 0  \"{src}/**/*.{vue,ts,tsx}\" --fix",
         "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
         "build": "tsc -p tsconfig.json",
         "clean": "rm -rf dist build",
@@ -40,6 +40,7 @@
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
             "prettier --write"
         ],
         "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": [
