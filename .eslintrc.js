@@ -1,7 +1,7 @@
 /*
  * @Author: 仲灏<izhaong@outlook.com>🌶🌶🌶
  * @Date: 2022-05-06 19:12:05
- * @LastEditTime: 2022-05-25 19:37:16
+ * @LastEditTime: 2022-05-25 20:00:21
  * @LastEditors: 仲灏<izhaong@outlook.com>🌶🌶🌶
  * @Description: 暂无
  * @FilePath: /question100/.eslintrc.js
@@ -13,7 +13,11 @@ module.exports = {
         node: true,
     },
     plugins: ['@typescript-eslint'],
-    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
+    ],
     overrides: [
         {
             files: ['test/**'],
@@ -29,6 +33,7 @@ module.exports = {
     },
     settings: {
         jest: {
+            // eslint-disable-next-line @typescript-eslint/no-var-requires
             version: require('jest/package.json').version,
         },
     },
