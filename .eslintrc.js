@@ -1,7 +1,7 @@
 /*
  * @Author: 仲灏<izhaong@outlook.com>🌶🌶🌶
  * @Date: 2022-05-06 19:12:05
- * @LastEditTime: 2022-05-25 20:00:21
+ * @LastEditTime: 2022-05-31 18:33:48
  * @LastEditors: 仲灏<izhaong@outlook.com>🌶🌶🌶
  * @Description: 暂无
  * @FilePath: /question100/.eslintrc.js
@@ -20,7 +20,7 @@ module.exports = {
     ],
     overrides: [
         {
-            files: ['test/**'],
+            files: ['test/**', '*.test.*'],
             plugins: ['jest'],
             extends: ['plugin:jest/recommended'],
             rules: { 'jest/prefer-expect-assertions': 'off' },
