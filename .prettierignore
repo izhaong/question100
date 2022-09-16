@@ -12,3 +12,4 @@ coverage
 
 /public/*
 webpack
+/src/interview/muke.ts

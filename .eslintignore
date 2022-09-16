@@ -2,3 +2,6 @@ build
 node_modules
 webpack/*
 webpack
+
+
+/src/interview/muke.ts
